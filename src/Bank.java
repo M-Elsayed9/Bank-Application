@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Bank {
   private BankAccount[] accounts;
   private int numAccounts;
-  private static final int DEFAULT_CAPACITY = 10;
+  private static final int DEFAULT_CAPACITY = 100;
 
   public Bank() {
     this(DEFAULT_CAPACITY);

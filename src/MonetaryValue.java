@@ -27,29 +27,6 @@ public class MonetaryValue {
       + ((absCents % 100) < 10 ? "0" : "") + absCents % 100;
   }
 
-  /*
-  // alternative version:
-  public String toString() {
-    int dollarsPart = Math.abs(cents / 100), 
-        centsPart = Math.abs(cents % 100);
-    String result = "$";
-
-    if (isNegative()) {
-      result += "-";
-    }
-
-    result += dollarsPart + ".";
-
-    if (centsPart < 10) {
-      result += "0" + centsPart;
-    } else {
-      result += centsPart;
-    }
-
-    return result;
-  }
-  */
-
   public double toDouble() {
     return cents / 100.0;
   }
@@ -62,6 +39,10 @@ public class MonetaryValue {
     return this.cents == other.cents;
   }
 
+  public boolean isLessThan(MonetaryValue other) {
+    return this.cents < other.cents;
+  }
+
   public boolean isGreaterThan(MonetaryValue other) {
     return this.cents > other.cents;
   }
@@ -72,5 +53,9 @@ public class MonetaryValue {
 
   public MonetaryValue minus(MonetaryValue amount) {
     return new MonetaryValue(this.cents - amount.cents);
+  }
+
+  public static MonetaryValue difference(MonetaryValue value1, MonetaryValue value2) {
+    return new MonetaryValue(value1.cents - value2.cents);
   }
 }

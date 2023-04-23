@@ -1,7 +1,7 @@
 public class BankAccount {
     private Name name;
     private int accountNumber;
-    private MonetaryValue balance;
+    protected MonetaryValue balance;
 
     private static int nextAccountNumber = 100_000;
     private static double interestRate = 0.0;
@@ -79,6 +79,10 @@ public class BankAccount {
                 && this.accountNumber == other.accountNumber;
     }
 
+    protected boolean withdrawalNotAllowed(MonetaryValue amount) {
+        return amount.isNegative() || amount.isGreaterThan(balance);
+    }
+
     public Name getName() {
         return name;
     }
@@ -103,4 +107,5 @@ public class BankAccount {
         }
         return false;
     }
+
 }
