@@ -1,19 +1,27 @@
 # Bank-Application
 
 -This is a simple, ongoing project that utilizes the use of OOP 
+
 -So far, only certain features have been implemented
 
 
 TODO: 
 
 -allow the user to create different type of accounts 
+
 -automate some more of the prgoram functionalties
+
 -add GUI
+
 -implement DSA for better preformance and search
 
 # Instructions for running the program: 
 
 -The program can be run from the terminal or from the IDE
+
+-in the case of running the program from the terminal, the input/output file will be located inside the src directory.
+
+-(IMPORTANT) View the Script_session.txt file in the project's folder for a recorded terminal session on how to run the program from the terminal.
 
 -Download or clone the repository to your local machine.
 
@@ -23,7 +31,7 @@ TODO:
 
 -The file is already located inside the cloned repository 
 
--Enter one of the letters to decide which functionalty would you like to use
+-Enter one of the letter to decide which functionalty would you like to use
 
 Choices:
 b - get balance, d - deposit, w - withdraw, a - add account, h - get account with higest balance, q - quit
@@ -44,7 +52,7 @@ b - get balance, d - deposit, w - withdraw, a - add account, h - get account wit
 
 - The user can update the contents of the "accounts_input.txt" file for resuability by entering it as the output file.
 
-- in the case of running the program from the terminal, the input/output file will be located inside the src directory.
+
 
 
 

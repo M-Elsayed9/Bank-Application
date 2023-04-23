@@ -1,0 +1,73 @@
+Script started on 2023-04-23 00:51:54-04:00 
+
+@PC:/mnt/c/user/Bank-Application/src$ javac BankApp.java
+@PC:/mnt/c/user/Bank-Application/src$ java BankApp
+
+Name of input file (accounts_input.txt): accounts_input.txt
+
+Choices:
+b - get balance, d - deposit, w - withdraw, a - add account, h - get account with higest balance, q - quit
+b
+Account number: 456731
+Balance is $6678.05
+
+Choices:
+b - get balance, d - deposit, w - withdraw, a - add account, h - get account with higest balance, q - quit
+d
+Account number: 456731
+Amount to deposit: $1000
+Deposit successful
+
+Choices:
+b - get balance, d - deposit, w - withdraw, a - add account, h - get account with higest balance, q - quit
+b
+Account number: 456731
+Balance is $7678.05
+
+Choices:
+b - get balance, d - deposit, w - withdraw, a - add account, h - get account with higest balance, q - quit
+w
+Account number: 456731
+Amount to withdraw: $1000
+Withdrawal successful
+
+Choices:
+b - get balance, d - deposit, w - withdraw, a - add account, h - get account with higest balance, q - quit
+b
+Account number: 456731
+Balance is $6678.05
+
+Choices:
+b - get balance, d - deposit, w - withdraw, a - add account, h - get account with higest balance, q - quit
+a
+Account number: 101010
+First name: Alan
+Last name: Turing
+Account added
+
+Choices:
+b - get balance, d - deposit, w - withdraw, a - add account, h - get account with higest balance, q - quit
+b
+Account number: 101010
+Balance is $0.00
+
+Choices:
+b - get balance, d - deposit, w - withdraw, a - add account, h - get account with higest balance, q - quit
+d
+Account number: 101010
+Amount to deposit: $999999.50
+Deposit successful
+
+Choices:
+b - get balance, d - deposit, w - withdraw, a - add account, h - get account with higest balance, q - quit
+h
+Account number with the highest balance: 101010
+
+Choices:
+b - get balance, d - deposit, w - withdraw, a - add account, h - get account with higest balance, q - quit
+q
+Name of output file (accounts_output.txt): accounts_output.txt
+Program Terminated
+
+
+Script done on 2023-04-23 00:57:42-04:00 
